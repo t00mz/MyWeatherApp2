@@ -1,0 +1,88 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+/*#footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}*/
+
+#homepagebody {
+    background-image: url(homepage.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#p1body {
+    font-size: 20px;
+    text-align: left;
+}
+
+#searchbtn {
+    background-color: black;
+    color: white;
+}
+
+#forecastbody {
+    background-image: url(homepage.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#forecastdiv {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+#invalidzipbody {
+    background-image: url(homepage.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-size: 23px;
+    text-align: left;
+}
+
+.search{
+    width: 250px;
+    align-self: center;
+}
+
+#table {
+    width: 35%;
+    border-style: hidden;
+}
+
+#icon {
+    width: 28px;
+}
+
+#mistforecastbody {
+/*    background-image: url(homepage.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;*/
+}

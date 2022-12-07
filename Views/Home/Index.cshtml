@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<body id="homepagebody">
+<div>
+    <br /><br />
+    <p id="p1body">
+            <strong>Enter a zip code to get the current conditions, temperature, and more!</strong>
+    </p>
+</div>
+<div class="search">
+    <form asp-controller="Home" asp-action="WeatherForecast">
+        <div id="searchbar" class="input-group mb-3">
+            <input type="text" name="zipCode" class="form-control" maxlength="5" placeholder="Enter Zip Code">
+            <button id="searchbtn"class="btn btn-outline-secondary" type="submit" id="button-addon2">Search</button>
+        </div>
+    </form>
+</div>
+</body>

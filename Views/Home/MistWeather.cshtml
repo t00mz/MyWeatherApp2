@@ -1,0 +1,55 @@
+﻿@model ForecastModel;
+
+
+
+<br />
+<br />
+
+<body id="mistforecastbody">
+    <div id="forecastdiv">
+
+        @Model.Name, @Model.Region, @Model.Country. <br />
+        Local time: @Model.Localtime
+
+
+        <br /><br />
+
+        <table id="table">
+            <tbody>
+                <tr>
+                    <th scope="row">Conditions</th>
+                    <td>@Model.Text <img src="@Model.Icon" id="icon" /></td>
+                </tr>
+                <tr>
+                    <th scope="row">Temperature</th>
+                    <td>@Model.Temp_f°F</td>
+                </tr>
+                <tr>
+                    <th scope="row">Feels Like</th>
+                    <td>@Model.Feelslike_f°F</td>
+                </tr>
+                <tr>
+                    <th scope="row">Humidity</th>
+                    <td>@Model.Humidity%</td>
+                </tr>
+                <tr>
+                    <th scope="row">Windspeed</th>
+                    <td>@Model.Wind_mph mph</td>
+                </tr>
+                <tr>
+                    <th scope="row">Wind Direction</th>
+                    <td>@Model.Wind_dir</td>
+                </tr>
+                <tr>
+                    <th scope="row">Sunrise</th>
+                    <td>@Model.Sunrise</td>
+                </tr>
+                <tr>
+                    <th scope="row">Sunset</th>
+                    <td>@Model.Sunset</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</body>
