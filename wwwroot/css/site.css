@@ -79,10 +79,26 @@ body {
     width: 28px;
 }
 
-#mistforecastbody {
-/*    background-image: url(homepage.jpeg);
+#fogforecastbody {
+    background-image: url(fog.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background-size: cover;*/
+    background-size: cover;
+}
+
+#blowingsnowforecastbody {
+    background-image: url(blowingsnow.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#moderaterainforecastbody {
+    background-image: url(moderaterain.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }

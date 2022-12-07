@@ -2,14 +2,15 @@
 
 
 
-<br /><br />
+<br />
+<br />
 
-<body id="forecastbody">
+<body id="blowingsnowforecastbody">
     <div id="forecastdiv">
 
         @Model.Name, @Model.Region, @Model.Country. <br />
         Local time: @Model.Localtime
-        
+
 
         <br /><br />
 
@@ -22,7 +23,7 @@
                 <tr>
                     <th scope="row">Temperature</th>
                     <td>@Model.Temp_f°F</td>
-                    </tr>
+                </tr>
                 <tr>
                     <th scope="row">Feels Like</th>
                     <td>@Model.Feelslike_f°F</td>

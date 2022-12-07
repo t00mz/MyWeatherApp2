@@ -48,9 +48,17 @@ namespace MyWeatherApp2.Controllers
             {
                 forecastModel.Name = "Default"; 
             }
-            if(forecastModel.Text == "Mist")
+            if(forecastModel.Text == "Fog")
             {
-                return View("MistWeather", forecastModel); 
+                return View("FogWeather", forecastModel); 
+            }
+            if (forecastModel.Text == "Blowing snow")
+            {
+                return View("BlowingSnowWeather", forecastModel);
+            }
+            if (forecastModel.Text == "Moderate rain")
+            {
+                return View("ModerateRainWeather", forecastModel);
             }
 
             //if (string.IsNullOrWhiteSpace(forecastModel.Region))

@@ -2,6 +2,7 @@
 using MyWeatherApp2.Models;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System.Globalization;
 
 namespace MyWeatherApp2.Logic
 {
@@ -15,7 +16,7 @@ namespace MyWeatherApp2.Logic
 
             var key = File.ReadAllText("appsettings.json");
             var apiKey2 = JObject.Parse(key).GetValue("apiKey").ToString();
-     
+
             var request = new HttpRequestMessage
             {
                 Method = HttpMethod.Get,
@@ -53,7 +54,7 @@ namespace MyWeatherApp2.Logic
                     forecastModel.Name = forecast.location.name;
                     forecastModel.Region = forecast.location.region;
                     forecastModel.Country = forecast.location.country;
-                    forecastModel.Localtime = forecast.location.localtime;
+                    forecastModel.Localtime = TimeConverter.TimeConverterM(forecast.location.localtime);
 
                     return forecastModel;
                 }
@@ -68,5 +69,8 @@ namespace MyWeatherApp2.Logic
         {
             throw new NotImplementedException();
         }
+
+
+
     }
 }
